@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Loan Analytics Dashboard</h1>
+        <p class="subtitle">
+            Analyze loan applications using interactive charts and key business insights.
+        </p>
+
+        <!-- KPI Cards -->
+        <div class="kpi-container">
+
+            <div class="card">
+                <h3>Total Applications</h3>
+                <h2>{{ total }}</h2>
+            </div>
+
+            <div class="card">
+                <h3>Approved Loans</h3>
+                <h2>{{ approved }}</h2>
+            </div>
+
+            <div class="card">
+                <h3>Rejected Loans</h3>
+                <h2>{{ rejected }}</h2>
+            </div>
+
+            <div class="card">
+                <h3>Approval Rate</h3>
+                <h2>{{ approval_rate }}%</h2>
+            </div>
+
+        </div>
+
+        <!-- Charts -->
+
+        <div class="chart">
+            {{ loan_chart | safe }}
+        </div>
+
+        <div class="chart">
+            {{ property_chart | safe }}
+        </div>
+
+        <div class="chart">
+            {{ income_chart | safe }}
+        </div>
+
+    </div>
+
+</body>
+
+</html>

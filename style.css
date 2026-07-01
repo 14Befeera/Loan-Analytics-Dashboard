@@ -1,0 +1,89 @@
+/* ---------- General ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* ---------- Container ---------- */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:30px;
+}
+
+/* ---------- Heading ---------- */
+
+h1{
+    text-align:center;
+    color:#0B5ED7;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* ---------- KPI Cards ---------- */
+
+.kpi-container{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#0B5ED7;
+    font-size:32px;
+}
+
+/* ---------- Charts ---------- */
+
+.chart{
+    background:white;
+    padding:20px;
+    margin-top:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+    .kpi-container{
+        flex-direction:column;
+    }
+
+}
