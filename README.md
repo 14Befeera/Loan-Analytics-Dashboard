@@ -90,6 +90,4 @@ http://127.0.0.1:5000
 * Connect with a database
 * Export reports in PDF and Excel
 
----
-
 
